@@ -9,9 +9,32 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
+    <header class="header">
+        <div class="wrapper">
+          <div class="header_block">
+            <!-- <img src="./icons/logo.png" alt="logo" class="logo"> -->
+            <nav class="navbar" id="menu">
+              <div class="call">
+                <div class="email"><a href="mailto:aidar.asakeev@gmail.com" class="email_link"><i class="material-icons email_icon">email</i> mike.serviceline@mail.ru</a></div>
+                <div class="number"><a href="tel:+996555208949" class="phone_link"><i class="material-icons phone_icon">call</i>+996 (555) 20-89-49</a></div>
+              </div>
+              <ul class="nav_list">
+                <li class="nav_item"><a href="#">Главная</a></li>
+                <li class="nav_item"><a href="#services">Услуги</a></li>
+                <li class="nav_item"><a href="#features">Особенности</a></li>
+                <li class="nav_item"><a href="#about">О нас</a></li>
+                <li class="nav_item"><a href="#footer">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+              <span class="hamburger_line"></span>
+              <span class="hamburger_line"></span>
+              <span class="hamburger_line"></span>
+            </div>
+          </div>
+        </div>
     <div id="app">
     </div>
-    <h1>Hello</h1>
     <script src="{% static 'frontend/main.js' %}"></script>
 </body>
 </html>
