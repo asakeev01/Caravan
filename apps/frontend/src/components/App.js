@@ -37,7 +37,6 @@ class App extends Component {
           {this.state.data.map(c =>
             <div class="service_item">
               <div class="block_service_img">
-                <img src={c.product_items[0].product_item_images[0].image} alt="" class="service_img"/>
               </div>
               <div class="block_service_label">
                 <h4>{c.name}</h4>
