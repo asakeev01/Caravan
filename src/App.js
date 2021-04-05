@@ -1,3 +1,5 @@
+import logo from './logo.svg';
+import './App.css';
 import React, { Component } from "react";
 import { render } from "react-dom";
 
@@ -50,5 +52,5 @@ class App extends Component {
 }
 
 export default App;
-const container = document.getElementById("app");
+const container = document.getElementById("root");
 render(<App />, container);
