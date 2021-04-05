@@ -7,8 +7,6 @@ import dj_database_url
 from pathlib import Path
 
 
-django_heroku.settings(locals())
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 dotenv_file = os.path.join(BASE_DIR, ".env")
@@ -124,3 +122,5 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'build/static')]
 
 options = DATABASES['default'].get('OPTIONS', {})
 options.pop('sslmode', None)
+
+django_heroku.settings(locals())
